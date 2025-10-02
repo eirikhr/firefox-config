@@ -1,0 +1,12 @@
+# Ignore everything by default
+*
+
+# IMPORTANT: Keep the 'chrome' folder and its contents
+!/chrome/
+!/chrome/*
+
+# You can also add other specific files you want to track, like user.js
+# !/user.js
+
+# Don't ignore this .gitignore file itself
+!/.gitignore

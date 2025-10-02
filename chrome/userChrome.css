@@ -1,0 +1,83 @@
+/* Aggressively remove left drag space and padding before first tab */
+#TabsToolbar .titlebar-spacer,
+#TabsToolbar .tabbrowser-arrowscrollbox > spacer,
+#TabsToolbar .tabbrowser-tab[first-visible-tab="true"]::before,
+#TabsToolbar .tabbrowser-tab[first-visible-tab="true"] {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+	
+	width: 0 !important;
+	min-width: 0 !important;
+}
+/* Hide Back and Forward buttons in Firefox */
+#back-button, #forward-button {
+	display: none !important;
+}
+
+/* Hide Maximize button in Firefox window controls */
+#restore-button, #maximize-button, .titlebar-max {
+	display: none !important;
+}
+
+#urlbar-container {
+    width: auto !important;
+}
+
+#urlbar {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#urlbar[breakout-extend] {
+    width: 100vw !important;
+}
+
+/* Minimalist Firefox UI tweaks */
+
+
+/* Hide titlebar (window drag area) */
+#titlebar {
+	display: none !important;
+}
+
+/* Hide sidebar button */
+#sidebar-button {
+	display: none !important;
+}
+
+/* Hide new tab button */
+#tabs-newtab-button {
+	display: none !important;
+}
+
+/* Hide tab overflow scroll arrows */
+.tabbrowser-arrowscrollbox > .scrollbutton-up,
+.tabbrowser-arrowscrollbox > .scrollbutton-down {
+	display: none !important;
+}
+
+/* Hide the menu button (hamburger) */
+#PanelUI-button {
+	display: none !important;
+}
+
+/* Hide the identity box (site info left of URL) */
+#identity-box {
+	display: none !important;
+}
+
+/* Hide the page action buttons (right of URL bar) */
+#page-action-buttons {
+	display: none !important;
+}
+
+/* Hide the extensions button */
+#unified-extensions-button {
+	display: none !important;
+}
+
+/* Hide the reload and stop buttons */
+#reload-button, #stop-button {
+	display: none !important;
+}
